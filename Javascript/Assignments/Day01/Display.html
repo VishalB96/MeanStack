@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day01</title>
+</head>
+
+<body>
+
+
+</body>
+<script>
+    "using strict";
+    let name = "Vishal Bhonsle";
+    document.write("<div><h1><b>" + name + "</b></h1></div>");
+
+    function printname(n) {
+        if (n != undefined) {
+            let i;
+            for (i = 1; i <= 6; i++)
+                document.write("<div><h" + i + "><b>" + name + "</b></h" + i + "></div>");
+        }
+    }
+
+    printname(name);
+</script>
+
+</html>
