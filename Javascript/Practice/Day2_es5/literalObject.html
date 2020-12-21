@@ -1,0 +1,32 @@
+<script>
+    let obj = {name : 'vishal' , "2division" : 'A'};
+    obj.name='Vishal Bhonsle';
+    obj.marks=80 //adding instance member
+    alert(obj); // object Object
+    document.write(obj.constructor); //function Object
+    document.write("<br>");
+    document.write(obj.name +  " " + obj["2division"]+" "+obj.marks);
+    let obj2 = new Object();
+    obj2.name ="Vishal";
+    obj2.age = 24;
+    document.write("<h3>"+obj2.name+" : "+obj2.age+"</h3>" );
+
+    //adding method to literal object
+    obj1={
+     fname: "Raj",
+      lname:"Mathur",
+     age : 25,
+     add: { d:"juhu"},
+        fullname:    function()
+	{
+	  return this.fname+ " "+this.lname;
+	},
+      toString:function()
+  { return  this.fullname() +"  "+this.age+" "+ this.add.d;  }
+
+}
+var f=obj1.fullname();
+document.write(f);
+document.write(obj1);
+
+</script>

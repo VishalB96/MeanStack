@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callme(){
+            let v = document.getElementById("para");
+            alert(v);
+
+        }
+
+        function copy(){
+            let x = document.getElementById("c1");
+            let y = document.getElementById("c2");
+            y.innerHTML = x.value;
+        }
+    </script>
+</head>
+<body>
+    
+    <p id="para">welcome to <b>the world</b> of dom</p>
+    <button onclick="callme()">Click</button>
+    <hr>
+    <input id="c1" type="text" placeholder="Type text to copy to Paragraph">
+    <p id="c2">Copied text will come here</p>
+    <button onclick="copy()">Copy</button>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stRed{
+            color : red;
+        }
+
+        .stBlue{
+            color : blue;
+        }
+    </style>
+    <script>
+        function changeClass(){
+            let pp = document.getElementById("para");
+            pp.classList.toggle("stRed");
+            
+        }
+    </script>
+</head>
+<body>
+    <p id="para">CHECK MY COLOR</p>
+    <button onclick="changeClass()">Change</button>
+</body>
+</html>

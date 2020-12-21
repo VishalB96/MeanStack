@@ -1,0 +1,32 @@
+<script>
+    'use strict'
+class Account
+{ 
+   constructor(name,amt)
+  {
+  this.name=name;
+  this.balance=amt;
+  alert(typeof this.constructor)
+    }
+}
+var obj1=new Account("raj",20000);
+console.log(obj1);
+document.write("obj1 instance of account : "+(obj1 instanceof Account)+"<br>");//true
+document.write("obj1 instance of Object : "+(obj1 instanceof Object)+"<br>");//true
+obj1.name="geeta";
+console.log(obj1);
+document.write(obj1+" : since tostring not defined tostring method of Object is called.<br>"); //object Object 
+var obj2=new Account("Mona",50000);
+document.write(obj2.name + "<br>");
+console.log(new Object());
+
+
+let user = class {
+    sayHi(){
+        alert (obj1.name+" says hi");
+    }
+};
+new user().sayHi();
+
+document.write(user);
+</script>

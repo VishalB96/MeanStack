@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //"use strict";
+        function person(nm,mks)
+{
+     alert(this)//it will display  Window[native code]
+    this.name=nm
+    this.marks=mks
+ }
+person('asdas',80);
+document.write(window.name);
+console.log(window);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
