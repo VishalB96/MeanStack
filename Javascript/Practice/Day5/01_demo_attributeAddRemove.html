@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var colors1 = ['red','green','blue'];
+        var i =0;
+        function fun1(){
+            let pp = document.getElementsByTagName("p");
+            
+            for(let j = 0;j<pp.length;j++){
+                alert(pp[j].getAttribute("align"));
+                if(pp[j].getAttribute("align")==left)
+                    pp[j].setAttribute("align","right");
+                else if(pp[j].getAttribute("align")==right)
+                    pp[j].setAttribute("align","left");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus modi nihil at assumenda, nisi saepe ipsa reiciendis minima et.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate qui natus alias. Iusto, in! Fuga ex dolorem inventore sit harum, excepturi, numquam, quas autem cum reiciendis eos vitae! Dolore architecto sit nisi.
+        <button onclick="fun1()">click</button>
+    </p>
+</body>
+</html>

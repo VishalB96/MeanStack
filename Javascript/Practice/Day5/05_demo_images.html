@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            display: block;
+        }
+        .inactive{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="next()">Next</button>
+    <img src="1.png" alt="" srcset="">
+    <img src="2.png" alt="" srcset="">
+    <img src="3.png" alt="" srcset="">
+</body>
+<script>
+    var count = document.images.length;
+    document.onloadeddata(next(-1));
+    function next(activeid){
+        document.images[++activeid].classList.add("active");
+        
+        for(let i=activeid ; i<=count;i++)
+            document.images[0].classList.add("inactive");
+    }
+</script>
+</html>

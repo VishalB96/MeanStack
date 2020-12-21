@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var siv1
+        
+        function si1(){
+             siv1 = setInterval('alert("Holaa")',2000);
+        }
+
+        function si2(){
+            clearInterval(siv1);
+        }
+
+
+    </script>
+</head>
+<body>
+    <button onclick="si1()">start interval</button>
+    <button onclick="si2()">claeraInterval</button>
+    <br>
+    <input type="text" name="disp" id="disp"><br>
+    <button></button>
+</body>
+</html>

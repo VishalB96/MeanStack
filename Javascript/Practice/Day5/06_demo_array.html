@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = ["lambu" ,"batla",333,6996];
+        var b = [3434,444,2111];
+        alert(a);
+        alert(b);
+        var c = new Array(3);//1 parameter denotes size of array
+        var d = new Array(33,23,54,123);//parameters more than 1 hence becomes elemnts of array
+        document.write(a+" length : "+a.length+"<hr>");
+        document.write(b+" length : "+b.length+"<hr>");
+        document.write(c+" length : "+c.length+"\t"+c.constructor+"<hr>");
+        c[0]=88;
+        document.write(c+" length : "+c.length+"\t"+c.constructor+"<hr>");
+        document.write(d+" length : "+d.length+"\t"+d.constructor+"<hr><hr>");
+
+        for(let e in d)//using in iterate over index better to use when class
+        document.write(e);
+        document.write("<hr><hr>");
+        for(let e of d)//using of iterate over elements and better to use when array
+        document.write(e+ " ");
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
