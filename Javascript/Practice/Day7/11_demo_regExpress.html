@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check_pass() {
+            let cap = /[A-Z]{1,}/
+            let small = /[a-z]{1,}/
+            let num = /[0-9]{1,}/
+
+            let str = document.getElementById("tt").value;
+            if (cap.test(str)) {
+                a = 1;
+            }
+            else {
+                alert("letter is missing")
+                a = 0;
+            }
+            if (small.test(str)) {
+                a = a + 1;
+            }
+            else {
+                a = 0;
+                alert("small letter  is missing")
+            }
+            if (num.test(str)) {
+                a = a + 1;
+            }
+            else {
+                alert("number  is missing")
+            }
+            if (a == 3)
+                return true
+            else
+                return false
+        }
+        function vali() {
+            let r = check_pass()
+            return r;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form action="go.html" onsubmit="return vali()">
+        <input id="tt" onchange="check_pass()" />
+        <input type="submit" />
+    </form>
+
+</body>
+
+</html>

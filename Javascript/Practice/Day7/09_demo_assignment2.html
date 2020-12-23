@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function dosum() {
+            var sldata = 0;
+            if (document.frm.a.checked)
+                sldata += +document.frm.a.value
+
+            if (document.frm.b.checked)
+                sldata += +document.frm.b.value
+
+            if (document.frm.c.checked)
+                sldata += +document.frm.c.value
+
+            document.getElementById("dd").innerHTML = sldata;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        <input type="checkbox" name="a" value="250" />C 250/-
+        <input type="checkbox" name="b" value="750" />c# 750/-
+        <input type="checkbox" name="c" value="550" />JavaScript 550/-
+        <div id="dd"></div>
+        <input type="button" value="read" onclick="dosum()">
+    </form>
+
+</body>
+
+</html>

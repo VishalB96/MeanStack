@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function readradio() {
+            var sldata = "";
+            if (document.frm.a.checked)
+                sldata += document.frm.a.value
+
+            if (document.frm.b.checked)
+                sldata += document.frm.b.value
+
+            if (document.frm.c.checked)
+                sldata += document.frm.c.value
+
+            document.getElementById("dd").innerHTML = sldata;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        <input type="checkbox" name="a" value="dance" />dance
+        <input type="checkbox" name="b" value="music" />music
+        <input type="checkbox" name="c" value="sports" />sports
+        <div id="dd"></div>
+        <input type="button" value="read" onclick="readradio()">
+    </form>
+
+</body>
+
+</html>

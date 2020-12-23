@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .err{color : red}
+    </style>
+    <script>
+        function check() {
+            var x = namevali();
+            var y = passvali();
+
+            if (x == true && y == true)
+                return true;
+            else
+                return false;
+        }
+
+        function namevali() {
+
+            var bool = true;
+            var data = document.frm.nm.value;
+            var len = data.length;
+            var nm;
+            if (len == 0 && data == "") {
+                bool = false;
+                n = document.getElementById("n");
+                n.innerHTML = "Enter valid aname";
+                return bool;
+            }
+            else
+                n.innerHTML = "";
+
+            return bool;
+        }
+
+        function passvali() {
+            var bool = true;
+            var data = document.frm.pass.value;
+            var len = data.length;
+            var pa;
+            if (len == 0 && data == "") {
+                bool = false;
+                pas = document.getElementById("pas");
+                pas.innerHTML = "Enter password";
+
+                return bool;
+            }
+            else
+                pas.innerHTML = "";
+
+            return bool;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="frm" action="blur.html" onsubmit="return check()">
+        <input type="text" name="nm" onchange="namevali()"><span id="n" class="err"></span>
+        <input type="text" name="pass" onchange="passvali()"><span id="pas" class="err"></span>
+        <input type="submit">
+
+    </form>
+
+
+</body>
+
+</html>

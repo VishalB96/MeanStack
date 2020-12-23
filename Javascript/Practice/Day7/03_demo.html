@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function call(a) {
+            v = a.length
+            alert(a)
+            alert(v)
+            for (i = 0; i < v; i++) {
+                pobj = document.getElementById("pp");
+                pobj.innerHTML += (a.elements[i].value)
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <p id="pp">
+    <form>
+        <input type="radio" name="rd" value="good">good
+        <input type="radio" name="rd" value="better">better
+        <input type="radio" name="rd" value="best">best
+        <input type="button" value="click" onclick="call(this.form)">
+    </form>
+
+</body>
+
+</html>

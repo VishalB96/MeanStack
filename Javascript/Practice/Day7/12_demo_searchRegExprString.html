@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // define string to be searched
+        var str = " The Matrix";// define search pattern
+        var pattern = /tri/;// search and return result
+        if (str.search(pattern) == -1) {
+            alert("Sorry, Trinity is not in The Matrix.");
+        }
+        else {
+            alert("Trinity located in The Matrix at character " + str.search(pattern));
+        }
+
+        var pattern2 = /hello/i;
+        
+        str = " hell o Hello";
+        alert(str.search(pattern2));
+
+        str="hell";
+pattern=/^hell$/;
+
+if(pattern.test(str))
+alert("hi")
+else
+alert("bye")
+
+str = "for";
+pattern = /<\for/;
+
+alert(str.search(pattern));
+
+
+var datew = "30-12-1009";
+var dpattern = /^[0-3]{1}[0-9]{1}[-,`\`," "]{1}[0,1]{1}[0-9]{1}[-,`\`," "]{1}[1,2]{1}[0-9]{3}/
+
+alert(dpattern.test(datew));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
