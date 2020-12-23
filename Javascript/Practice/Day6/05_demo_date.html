@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var d = new Date(); 	//O/P: Mon Nov 30 2020 14:33:20 GMT+0530 (India Standard Time) 
+        document.write(d + "<hr>");
+        var d1 = new Date(2018, 11, 24, 10, 33, 30, 0);	//[year, month, day, hours, minutes, seconds, milliseconds]
+        //o/p : Mon Dec 24 2018 10:33:30 GMT+0530 (India Standard Time)
+        document.write(d1 + "<hr>");
+
+        var d2 = new Date(2018, 11, 24, 10, 33, 30);//[6 numbers specify year, month, day, hour, minute, second:]
+        //O/P:  Mon Dec 24 2018 10:33:30 GMT+0530 (India Standard Time)
+        document.write(d2+ "<hr>")
+
+        var s = "2015-03-25"
+        var d2 = new Date(s);
+        document.write(d2+ "<hr>");
+        var msec = Date.parse("March 21, 2012");
+        document.write(msec+ "<hr>");
+        var d3 = new Date(msec);
+        document.write(d3+ "<hr>");
+        var shrtdate = Date.parse("Mar-21-2012");
+        document.write(shrtdate+ "<hr>");
+        var d4 = new date(shrtdate);
+        document.write(d4+ "<hr>");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

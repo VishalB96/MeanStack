@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function go() { alert("click event"); }
+    </script>
+</head>
+
+<body>
+    <form>
+        <button id="btn">Click</button>
+        <p id="pp"> i am p tag</p>
+    </form>
+</body>
+<script>
+    document.getElementById("btn").addEventListener("click", go);
+    document.getElementById("pp").addEventListener("mouseover", function rise() { alert("go rise") })
+    document.getElementById("btn").removeEventListener("mousemove", myFunction);
+</script>
+
+</html>

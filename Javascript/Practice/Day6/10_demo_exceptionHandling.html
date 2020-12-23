@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // ask for user input
+
+code = prompt("Enter some JavaScript code");
+// run the code and catch errors if any generated
+
+try 
+{
+	eval(code);
+	
+} 
+catch (e) {
+
+if (e instanceof TypeError)
+{
+	alert(e.message+"Variable type problem, check your variable definitions!"+e.name )
+}
+else if (e instanceof RangeError)
+{
+	alert(e.message+"Number out of range!"+e.name)
+}
+else if (e instanceof SyntaxError)
+{
+alert(e.message+"Syntax error in code!"+e.name);
+}
+else{
+alert(e.message+"An unspecified error occurred!"+e.name);
+ 
+  }
+  
+}
+
+finally 
+{ 
+	alert ("Thank you for playing. Come back soon!");
+}
+
+
+//alert(someArr[18]) or null.f()
+//var someArr = new Array(89723742304323248456)
+//vara count = 99
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
